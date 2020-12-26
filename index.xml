@@ -7,20 +7,20 @@
         <time>2020-12-26 20:03:32</time>
         <prime lang="en_US">
             <title>Hello, World!</title>
-            <description>the first archive.</description>
+            <description>The first archive.</description>
             <files>
-                <include path="/index.md" type="markdown" ref="/archives/0/index.md"/>
+                <include path="./index.md" type="markdown" ref="/archives/0/index.md"/>
             </files>
-            <default path="/index.md"/>
+            <default path="./index.md"/>
         </prime>
         <translations>
             <translation lang="zh_CN">
                 <title>你好，世界！</title>
                 <description>第一篇文档</description>
                 <files>
-                    <include path="/index.md" type="markdown" ref="/archives/0/index.md"/>
+                    <include path="./index.md" type="markdown" ref="/archives/0/index_cn.md"/>
                 </files>
-                <default path="/index.md"/>
+                <default path="./index.md"/>
             </translation>
         </translations>
     </archive>
@@ -31,9 +31,10 @@
             <title>关于与NOW决裂的文档</title>
             <description>关于与NOW(Noob Of Wangchenxi)的决裂文档</description>
             <files>
-                <include path="/index.md" type="markdown" ref="/archive/1/index.md"/>
+                <include path="./index.md" type="markdown" ref="/archive/1/index.md"/>
+                <include path="./img/whyYQYinBL.png" type="markdown" ref="/archive/1/img/whyYQYinBL.png" />
             </files>
-            <default path="/index.md"/>
+            <default path="./index.md"/>
         </prime>
         <translations/>
     </archive>
