@@ -27,6 +27,14 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:simpleType name="statusType">
+        <xs:restriction>
+            <xs:enumeration value="editing"/>
+            <xs:enumeration value="archived"/>
+            <xs:enumeration value="outdated"/>
+        </xs:restriction>
+    </xs:simpleType>
+
     <xs:complexType name="archiveType">
         <xs:sequence>
             <xs:element name="id" type="xs:int">
@@ -37,6 +45,11 @@
             <xs:element name="time" type="xs:dateTime">
                 <xs:annotation>
                     <xs:documentation>文档的时间</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="status" type="statusType">
+                <xs:annotation>
+                    <xs:documentation>文档状态</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="prime" type="translateType">
