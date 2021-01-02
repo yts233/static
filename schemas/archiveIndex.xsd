@@ -104,28 +104,59 @@
 
     <xs:complexType name="filesType">
         <xs:sequence>
-            <xs:element name="include" maxOccurs="unbounded">
+            <xs:element name="directory" maxOccurs="unbounded" type="directoryType">
+                <xs:annotation>
+                    <xs:documentation>一个文件夹</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" maxOccurs="unbounded" type="fileType">
                 <xs:annotation>
                     <xs:documentation>一个文件</xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
-                    <xs:attribute name="path" type="xs:string" use="required" default="/index.md">
-                        <xs:annotation>
-                            <xs:documentation>文件路径</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute name="type" type="xs:string" use="required" default="markdown">
-                        <xs:annotation>
-                            <xs:documentation>文件类型</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                    <xs:attribute name="ref" type="xs:string" use="required" default="/index.md">
-                        <xs:annotation>
-                            <xs:documentation>文件实际所在路径</xs:documentation>
-                        </xs:annotation>
-                    </xs:attribute>
-                </xs:complexType>
             </xs:element>
         </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="fileType">
+        <xs:attribute name="name" type="xs:string" use="required" default="/index.md">
+            <xs:annotation>
+                <xs:documentation>文件名</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="type" type="xs:string" use="required" default="markdown">
+            <xs:annotation>
+                <xs:documentation>文件类型</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="time" use="required" type="xs:dateTime">
+            <xs:annotation>
+                <xs:documentation>时间</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ref" type="xs:string" use="required" default="/index.md">
+            <xs:annotation>
+                <xs:documentation>文件所在路径</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    
+    <xs:complexType name="directoryType">
+        <xs:sequence>
+            <xs:element name="directory" maxOccurs="unbounded" type="directoryType">
+                <xs:annotation>
+                    <xs:documentation>一个文件夹</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" maxOccurs="unbounded" type="fileType">
+                <xs:annotation>
+                    <xs:documentation>一个文件</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="name" use="required" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>文件夹名</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
     </xs:complexType>
 </xs:schema>
