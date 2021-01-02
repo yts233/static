@@ -11,6 +11,11 @@
             <body>
                 <h1>Index of archives</h1>
                 <xsl:apply-templates/>
+                <hr/>
+                <footer>
+                    <p><a href="https://studio.yts233.tk">YTS233 Studio</a>
+                        Copyright 2021, All rights reserved.</p>
+                </footer>
             </body>
         </html>
     </xsl:template>
