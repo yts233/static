@@ -42,7 +42,16 @@
             </files>
             <default path="/Index.md"/>
         </prime>
-        <translations/>
+        <translations>
+            <translation lang="en-US">
+                <title>Document about breaking with NOW</title>
+                <description>Document about breaking with NOW(Noob Of Wangchenxi)</description>
+                <files>
+                    <file name="index.md" type="markdown" time="2021-01-01 0:00:00 +8"
+                          ref="/Archives/Shared/OnlyInChinese.md"/>
+                </files>
+            </translation>
+        </translations>
     </archive>
     <archive>
         <id>2</id>
