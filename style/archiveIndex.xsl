@@ -6,6 +6,7 @@
     <xsl:template match="/">
         <h5:html>
             <h5:head>
+                <h5:meta charset="UTF-8"/>
                 <h5:title>Index of archives</h5:title>
                 <h5:meta name="author" content="Ye_Tianshun"/>
             </h5:head>
