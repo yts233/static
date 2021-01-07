@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
+<archives xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
+    <archive>
+        <id>0</id>
+        <time>2020-12-26 20:03:32</time>
+        <status>archived</status>
+        <prime lang="en-US">
+            <title>Hello, World!</title>
+            <description>The first archive.</description>
+            <files>
+                <file name="Index.md" type="markdown" ref="/Archives/0/Index.md" time="2020/12/27 01:30:40 +8"/>
+            </files>
+            <default path="/Index.md"/>
+        </prime>
+        <translations>
+            <translation lang="zh-CN">
+                <title>你好，世界！</title>
+                <description>第一篇文档</description>
+                <files>
+                    <file name="Index.md" type="markdown" ref="/Archives/0/Index_cn.md" time="2020/12/27 01:30:29 +8"/>
+                </files>
+                <default path="/Index.md"/>
+            </translation>
+        </translations>
+    </archive>
+    <archive>
+        <id>1</id>
+        <time>2020-12-26 23:30:12</time>
+        <status>archived</status>
+        <prime lang="zh-CN">
+            <title>关于与NOW决裂的文档</title>
+            <description>关于与NOW(Noob Of Wangchenxi)的决裂文档</description>
+            <files>
+                <directory name="img">
+                    <file name="allowed.png" type="image" ref="/archive/1/img/allowed.png"
+                          time="2020/12/27 01:40:18 +8"/>
+                    <file name="whyYQYinBL.png" type="image" ref="/archive/1/img/whyYQYinBL.png"
+                          time="2020/12/26/ 21:37:33 +8"/>
+                </directory>
+                <file name="Index.md" type="markdown" ref="/Archives/1/Index.md" time="2020/12/27 01:51:40 +8"/>
+            </files>
+            <default path="/Index.md"/>
+        </prime>
+        <translations/>
+    </archive>
+    <archive>
+        <id>2</id>
+        <time>2021-01-07 19:53:32 +8</time>
+        <status>editing</status>
+        <prime lang="zh-CN">
+            <title>王晨熙的黑历史</title>
+            <description>关于BOW(Black background Of Wangchenxi)的文档</description>
+            <files>
+                <file name="Index.md" time="none" type="markdown" ref="/Archives/2/Index.md"/>
+            </files>
+        </prime>
+        <translations>
+            <translation lang="en-US">
+                <title>Black background Of Wangchenxi</title>
+                <description>The document about BOW(Black background Of Wangchenxi)</description>
+                <files>
+                    <file name="index.md" type="markdown" time="2021-01-01 0:00:00 +8"
+                          ref="/Archives/Shared/OnlyInChinese.md"/>
+                </files>
+            </translation>
+        </translations>
+    </archive>
+</archives>
