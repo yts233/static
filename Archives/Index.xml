@@ -63,7 +63,9 @@
         <status>editing</status>
         <prime lang="zh-CN">
             <title>王晨熙的黑历史</title>
-            <description>关于BOW(Black background Of Wangchenxi)的文档</description>
+            <description>
+                关于BOW(Black background Of Wangchenxi)的文档<br/>看完这篇文档，你可能会对王晨熙有新的认知
+            </description>
             <files>
                 <file name="Index.md" time="none" type="markdown" ref="https://static.yts233.tk/Archives/2/Index.md"/>
             </files>

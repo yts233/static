@@ -194,7 +194,7 @@ let studentInfo = {
 
 ### 6.为什么决裂文档在两月后才会发出来？
 
-​	主要还是没时间。又要上学，又在做项目[*True Minecraft in C#*](https://dev.azure.com/yts233/_git/Minecraft )，又收集统计你们的数据，没时间发这玩意。
+​	主要还是没时间。又要上学，又在做项目[*True Minecraft in C#*](https://dev.azure.com/yts233/_git/Minecraft)，又收集统计你们的数据，没时间发这玩意。
 
 ### 7. 发生了这么多事情为什么你看起来没事？
 
@@ -307,6 +307,6 @@ class Ye_Tianshun : People, IStudent, IProgrammer
 
 #### 以下内容针对游客
 
-​	写完这篇文档我又要去写[*Minecraft（C#）*](https://yts233.visualstudio.com/_git/Minecraft )项目了，我的计划堆得真密！
+​	写完这篇文档我又要去写[*Minecraft（C#）*](https://yts233.visualstudio.com/_git/Minecraft)项目了，我的计划堆得真密！
 
 ​	请在评论区发表自己对此看法吧  : D
