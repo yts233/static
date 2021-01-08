@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
+
+<archive xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
+    <id>2</id>
+    <time>2021-01-07 19:53:32 +8</time>
+    <status>editing</status>
+    <prime lang="zh-CN">
+        <title>王晨熙的黑历史</title>
+        <description>
+            关于BOW(Black background Of Wangchenxi)的文档。看完这篇文档，你可能会对王晨熙有新的认知
+        </description>
+        <files>
+            <file name="BOW.md" time="none" type="markdown" ref="https://static.yts233.tk/Archives/2/BOW.md"/>
+        </files>
+        <default path="/BOW.md"/>
+    </prime>
+    <translations>
+        <translation lang="en-US">
+            <title>Black background Of Wangchenxi</title>
+            <description>The document about BOW(Black background Of Wangchenxi)</description>
+            <files>
+                <file name="OnlyInChinese.md" type="markdown" time="2021-01-01 0:00:00 +8"
+                      ref="https://static.yts233.tk/Archives/Shared/OnlyInChinese.md"/>
+            </files>
+            <default path="/OnlyInChinese.md"/>
+        </translation>
+    </translations>
+</archive>

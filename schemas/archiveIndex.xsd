@@ -17,6 +17,12 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:element name="archive" type="archiveType">
+        <xs:annotation>
+            <xs:documentation>一个文档</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
     <xs:complexType name="translationsType">
         <xs:sequence>
             <xs:element name="translation" minOccurs="0" maxOccurs="unbounded" type="translateType">
@@ -768,7 +774,7 @@
                 <xs:documentation>时间</xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <xs:attribute name="ref" type="xs:string" use="required" default="/index.md">
+        <xs:attribute name="ref" type="xs:anyURI" use="required" default="/index.md">
             <xs:annotation>
                 <xs:documentation>文件所在路径</xs:documentation>
             </xs:annotation>

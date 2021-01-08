@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<comments xmlns="https://static.yts233.tk/schemas/comments.xsd">
+    <info>
+        <archive>
+            <id>-1</id>
+            <time>2021-01-01 0:00:00 +0</time>
+            <status>archived</status>
+            <prime lang="en-US">
+                <title>Example Archive</title>
+                <description>Example Archive</description>
+                <files>
+                    <file name="Example.md" type="markdown" time="2021-01-01 0:00:00 +0" ref="https://static.yts233.tk/Example/Example.md"/>
+                </files>
+                <default path="Example.md"/>
+            </prime>
+            <translations>
+                <translation lang="zh-CN">
+                    <title>实例文档</title>
+                    <description>实例文档</description>
+                    <files>
+                        <file name="Example.md" type="markdown" time="2021-01-01 0:00:00 +0" ref="https://static.yts233.tk/Example/Example.md"/>
+                    </files>
+                    <default path="Example.md"/>
+                </translation>
+            </translations>
+        </archive>
+        <count>1</count>
+        <total>2</total>
+    </info>
+    <items>
+        <comment>
+            <user>
+                <id>00000000-0000-0000-0000-000000000000</id>
+                <name>Testing Bottle</name>
+            </user>
+            <time>2021-01-01 0:00:00 +0</time>
+            <content>Test.</content>
+            <replies>
+                <reply>
+                    <user>
+                        <id>00000000-0000-0000-0000-000000000000</id>
+                        <name>Testing Bottle</name>
+                    </user>
+                    <time>2021-01-01 0:00:00 +0</time>
+                    <content>Test2.</content>
+                </reply>
+            </replies>
+        </comment>
+    </items>
+</comments>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:us="https://static.yts233.tk/schemas/user.xsd"
+           targetNamespace="https://static.yts233.tk/schemas/comment.xsd">
+
+    <xs:element name="comment" type="commentType">
+        <xs:annotation>
+            <xs:documentation>评论</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="commentType">
+        <xs:sequence>
+            <xs:element name="user" type="us:userType">
+                <xs:annotation>
+                    <xs:documentation>用户信息</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="time" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>发布时间</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="content" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>内容</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="replies" type="repliesType">
+                <xs:annotation>
+                    <xs:documentation>回复</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="repliesType">
+        <xs:sequence>
+            <xs:element name="reply" minOccurs="0" maxOccurs="unbounded" type="commentType">
+                <xs:annotation>
+                    <xs:documentation>一个回复</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

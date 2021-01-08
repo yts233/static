@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
 <archives xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
-    <archive>
+    <archive xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
         <id>0</id>
         <time>2020-12-26 20:03:32</time>
         <status>archived</status>
@@ -9,20 +9,21 @@
             <title>Hello, World!</title>
             <description>The first archive.</description>
             <files>
-                <file name="Index.md" type="markdown" ref="https://static.yts233.tk/Archives/0/Index.md"
+                <file name="HelloWorld.md" type="markdown" ref="https://static.yts233.tk/Archives/0/HelloWorld.md"
                       time="2020/12/27 01:30:40 +8"/>
             </files>
-            <default path="/Index.md"/>
+            <default path="/HelloWorld.md"/>
         </prime>
         <translations>
             <translation lang="zh-CN">
                 <title>你好，世界！</title>
                 <description>第一篇文档</description>
                 <files>
-                    <file name="Index.md" type="markdown" ref="https://static.yts233.tk/Archives/0/Index_cn.md"
+                    <file name="HelloWorld_cn.md" type="markdown"
+                          ref="https://static.yts233.tk/Archives/0/HelloWorld_cn.md"
                           time="2020/12/27 01:30:29 +8"/>
                 </files>
-                <default path="/Index.md"/>
+                <default path="/HelloWorld_cn.md"/>
             </translation>
         </translations>
     </archive>
@@ -41,19 +42,20 @@
                           ref="https://static.yts233.tk/Archives/1/img/whyYQYinBL.png"
                           time="2020/12/26/ 21:37:33 +8"/>
                 </directory>
-                <file name="Index.md" type="markdown" ref="https://static.yts233.tk/Archives/1/Index.md"
+                <file name="EOR.md" type="markdown" ref="https://static.yts233.tk/Archives/1/EOR.md"
                       time="2020/12/27 01:51:40 +8"/>
             </files>
-            <default path="/Index.md"/>
+            <default path="/EOR.md"/>
         </prime>
         <translations>
             <translation lang="en-US">
                 <title>Document about breaking with NOW</title>
                 <description>Document about breaking with NOW(Noob Of Wangchenxi)</description>
                 <files>
-                    <file name="index.md" type="markdown" time="2021-01-01 0:00:00 +8"
+                    <file name="OnlyInChinese.md" type="markdown" time="2021-01-01 0:00:00 +8"
                           ref="https://static.yts233.tk/Archives/Shared/OnlyInChinese.md"/>
                 </files>
+                <default path="/OnlyInChinese.md"/>
             </translation>
         </translations>
     </archive>
@@ -67,17 +69,19 @@
                 关于BOW(Black background Of Wangchenxi)的文档。看完这篇文档，你可能会对王晨熙有新的认知
             </description>
             <files>
-                <file name="Index.md" time="none" type="markdown" ref="https://static.yts233.tk/Archives/2/Index.md"/>
+                <file name="BOW.md" time="none" type="markdown" ref="https://static.yts233.tk/Archives/2/BOW.md"/>
             </files>
+            <default path="/BOW.md"/>
         </prime>
         <translations>
             <translation lang="en-US">
                 <title>Black background Of Wangchenxi</title>
                 <description>The document about BOW(Black background Of Wangchenxi)</description>
                 <files>
-                    <file name="index.md" type="markdown" time="2021-01-01 0:00:00 +8"
+                    <file name="OnlyInChinese.md" type="markdown" time="2021-01-01 0:00:00 +8"
                           ref="https://static.yts233.tk/Archives/Shared/OnlyInChinese.md"/>
                 </files>
+                <default path="/OnlyInChinese.md"/>
             </translation>
         </translations>
     </archive>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://static.yts233.tk/schemas/user.xsd">
+
+    <xs:element name="user" type="userType">
+        <xs:annotation>
+            <xs:documentation>用户信息</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="userType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string" default="00000000-0000-0000-0000-000000000000">
+                <xs:annotation>
+                    <xs:documentation>用户ID</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="name" type="xs:string" default="username">
+                <xs:annotation>
+                    <xs:documentation>用户名</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
