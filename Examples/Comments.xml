@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
+<?xml-stylesheet href="https://static.yts233.tk/Style/ArchiveIndex.xsl" type="text/xsl" ?>
 
-<comments xmlns="https://static.yts233.tk/schemas/comments.xsd">
+<comments xmlns="https://static.yts233.tk/Schemas/Comments.xsd">
     <info>
         <archive>
             <id>-1</id>

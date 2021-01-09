@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
+<?xml-stylesheet href="https://static.yts233.tk/Style/ArchiveIndex.xsl" type="text/xsl" ?>
 
 <!-- 这是一个索引示例 -->
 
-<archives xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
+<archives xmlns="https://static.yts233.tk/Schemas/ArchiveIndex.xsd">
     <archive>
         <id>-1</id>
         <time>2021-01-01 0:00:00 +0</time>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="https://static.yts233.tk/style/archiveIndex.xsl" type="text/xsl" ?>
-<archives xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
-    <archive xmlns="https://static.yts233.tk/schemas/archiveIndex.xsd">
+<?xml-stylesheet href="https://static.yts233.tk/Style/ArchiveIndex.xsl" type="text/xsl" ?>
+<archives xmlns="https://static.yts233.tk/Schemas/ArchiveIndex.xsd">
+    <archive xmlns="https://static.yts233.tk/Schemas/ArchiveIndex.xsd">
         <id>0</id>
         <time>2020-12-26 20:03:32</time>
         <status>archived</status>
