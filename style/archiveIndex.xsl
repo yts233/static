@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:ar="https://static.yts233.tk/schemas/archiveIndex.xsd" version="1.0"
                 xmlns:h5="http://www.w3.org/1999/xhtml">
-    <xsl:output method='html' version='1.0' encoding='UTF-8' indent='yes'/>
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
         <h5:html>
             <h5:head>
