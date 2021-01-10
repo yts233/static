@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://static.yts233.tk/Theme/Schemas/Theme.xsd">
+    <xs:element name="theme" type="themeType">
+        <xs:annotation>
+            <xs:documentation>一个主题</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="themeType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>名称</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="description" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>描述</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="version" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>版本</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="files" type="filesType">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="directoryType">
+        <xs:attribute name="name">
+            <xs:annotation>
+                <xs:documentation>文件夹名</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="fileType">
+        <xs:attribute name="name">
+            <xs:annotation>
+                <xs:documentation>文件名</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="path">
+            <xs:annotation>
+                <xs:documentation>路径</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="type" type="fileTypeType">
+            <xs:annotation>
+                <xs:documentation>文件类型</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="fileTypeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="markdown">
+                <xs:annotation>
+                    <xs:documentation>MarkDown文档</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="schema">
+                <xs:annotation>
+                    <xs:documentation>XSL架构</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="style">
+                <xs:annotation>
+                    <xs:documentation>XSLT样式</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="script">
+                <xs:annotation>
+                    <xs:documentation>JavaScript</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="font">
+                <xs:annotation>
+                    <xs:documentation>TTF/WOFF/WOFF2字体</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="xml">
+                <xs:annotation>
+                    <xs:documentation>XML文档</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="filesType">
+        <xs:sequence>
+            <xs:element name="directory" minOccurs="0" maxOccurs="unbounded" type="directoryType">
+                <xs:annotation>
+                    <xs:documentation>文件夹</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" minOccurs="0" maxOccurs="unbounded" type="fileType">
+                <xs:annotation>
+                    <xs:documentation>文件</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

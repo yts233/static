@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:ar="https://static.yts233.tk/schemas/archiveIndex.xsd" version="1.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+                xmlns:ar="https://static.yts233.tk/Schemas/ArchiveIndex.xsd"
                 xmlns:h5="http://www.w3.org/1999/xhtml">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-    <xsl:template match="/">
-        <h5:html>
+    <xsl:template match="ar:archives">
+        <h5:html lang="en-US">
             <h5:head>
                 <h5:meta charset="UTF-8"/>
                 <h5:title>Index of archives</h5:title>
-                <h5:meta name="author" content="Ye_Tianshun"/>
             </h5:head>
             <h5:body>
                 <h5:h1>Index of archives</h5:h1>
-                <xsl:apply-templates/>
+                <h5:ul class="archiveList">
+                    <xsl:apply-templates select="ar:archive"/>
+                </h5:ul>
                 <h5:hr/>
                 <h5:footer>
                     <h5:p>
@@ -23,13 +24,8 @@
             </h5:body>
         </h5:html>
     </xsl:template>
-    <xsl:template match="ar:archives">
-        <h5:ul class="archiveList">
-            <xsl:apply-templates/>
-        </h5:ul>
-    </xsl:template>
     <xsl:template match="ar:archive">
-        <h5:li class="archiveInfo">
+        <h5:li class="archiveInfo" lang="{ar:prime/@lang}">
             <h5:h2>
                 <xsl:value-of select="ar:prime/ar:title"/>
             </h5:h2>
@@ -59,7 +55,7 @@
         </h5:li>
     </xsl:template>
     <xsl:template match="ar:translation">
-        <h5:li>
+        <h5:li class="archiveTranslation" lang="{@lang}">
             <h5:h4>
                 <xsl:value-of select="@lang"/>
             </h5:h4>
