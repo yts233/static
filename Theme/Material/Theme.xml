@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<th:theme xmlns:th="https://static.yts233.tk/Theme/Theme.xsd">
+    <th:name>Material</th:name>
+    <th:description>Material in XML</th:description>
+    <th:version>1.0.0.0</th:version>
+    <th:files>
+        <th:directory name="Schemas">
+            <th:file name="Material.xsd" type="schema"/>
+        </th:directory>
+        <th:directory name="Scripts">
+
+        </th:directory>
+    </th:files>
+</th:theme>

@@ -30,6 +30,11 @@
                     <xs:documentation>回复</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:attribute name="id" type="xs:ID" default="-1">
+                <xs:annotation>
+                    <xs:documentation>评论ID</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
         </xs:sequence>
     </xs:complexType>
 

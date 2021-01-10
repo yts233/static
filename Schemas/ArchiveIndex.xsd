@@ -34,7 +34,7 @@
     </xs:complexType>
 
     <xs:simpleType name="statusType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="editing">
                 <xs:annotation>
                     <xs:documentation>编辑中</xs:documentation>
@@ -112,7 +112,7 @@
         </xs:attribute>
     </xs:complexType>
     <xs:simpleType name="languageType">
-        <xs:restriction>
+        <xs:restriction base="xs:string">
             <xs:enumeration value="af">
                 <xs:annotation>
                     <xs:documentation>南非公用荷兰语</xs:documentation>

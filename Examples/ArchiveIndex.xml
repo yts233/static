@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet href="https://static.yts233.tk/Style/ArchiveIndex.xsl" type="text/xsl" ?>
+<?xml-stylesheet href="https://static.yts233.tk/Styles/ArchiveIndex.xsl" type="text/xsl" ?>
 
 <!-- 这是一个索引示例 -->
 
@@ -18,8 +18,8 @@
         </prime>
         <translations>
             <translation lang="zh-CN">
-                <title>实例文档</title>
-                <description>实例文档</description>
+                <title>示例文档</title>
+                <description>示例文档</description>
                 <files>
                     <file name="Example.md" type="markdown" time="2021-01-01 0:00:00 +0" ref="https://static.yts233.tk/Example/Example.md"/>
                 </files>

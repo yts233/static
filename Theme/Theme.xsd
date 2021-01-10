@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="https://static.yts233.tk/Theme/Schemas/Theme.xsd">
+           targetNamespace="https://static.yts233.tk/Theme/Theme.xsd">
     <xs:element name="theme" type="themeType">
         <xs:annotation>
             <xs:documentation>一个主题</xs:documentation>
@@ -30,6 +30,18 @@
     </xs:complexType>
 
     <xs:complexType name="directoryType">
+        <xs:sequence>
+            <xs:element name="directory" minOccurs="0" maxOccurs="unbounded" type="directoryType">
+                <xs:annotation>
+                    <xs:documentation>文件夹</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" minOccurs="0" maxOccurs="unbounded" type="fileType">
+                <xs:annotation>
+                    <xs:documentation>文件</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
         <xs:attribute name="name">
             <xs:annotation>
                 <xs:documentation>文件夹名</xs:documentation>
@@ -38,14 +50,21 @@
     </xs:complexType>
 
     <xs:complexType name="fileType">
+        <xs:sequence>
+            <xs:element name="directory" minOccurs="0" maxOccurs="unbounded" type="directoryType">
+                <xs:annotation>
+                    <xs:documentation>文件夹</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" minOccurs="0" maxOccurs="unbounded" type="fileType">
+                <xs:annotation>
+                    <xs:documentation>文件</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
         <xs:attribute name="name">
             <xs:annotation>
                 <xs:documentation>文件名</xs:documentation>
-            </xs:annotation>
-        </xs:attribute>
-        <xs:attribute name="path">
-            <xs:annotation>
-                <xs:documentation>路径</xs:documentation>
             </xs:annotation>
         </xs:attribute>
         <xs:attribute name="type" type="fileTypeType">
