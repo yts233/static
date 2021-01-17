@@ -9,20 +9,20 @@
                     <xsl:value-of select="@Title"/>
                 </h5:title>
                 <h5:meta name="generator" content="https://static.yts233.tk/Templates"/>
-                <xsl:apply-templates select="pg:Style|pg:Script"/>
+                <xsl:apply-templates select="pg:Include/*"/>
             </h5:head>
             <h5:body>
-                <xsl:apply-templates select="//*[not(pg:Style|pg:Script)]"/>
+                <xsl:apply-templates select="*[not(pg:Include|pg:Script)]"/>
             </h5:body>
         </h5:html>
     </xsl:template>
     <xsl:template match="pg:Script">
         <xsl:if test="@Src">
-        <h5:script src="{@Src}" type="{@Type}"/>
+            <h5:script src="{@Src}" type="{@Type}"/>
         </xsl:if>
         <xsl:if test="not(@Src)">
             <h5:script lang="{@Type}">
-                <xsl:value-of select="."/>
+                <xsl:value-of select="current()"/>
             </h5:script>
         </xsl:if>
     </xsl:template>
@@ -32,7 +32,7 @@
         </xsl:if>
         <xsl:if test="not(@Href)">
             <h5:style lang="{@Type}">
-                <xsl:value-of select="."/>
+                <xsl:value-of select="current()"/>
             </h5:style>
         </xsl:if>
     </xsl:template>

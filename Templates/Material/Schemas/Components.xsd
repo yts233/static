@@ -3,5 +3,23 @@
            elementFormDefault="qualified"
            targetNamespace="https://static.yts233.tk/Templates/Material/Schemas/Components.xsd"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
+    <xs:element name="Init"/>
+    <xs:element type="ButtonType" name="Button"/>
+    <xs:simpleType name="ButtonVariantType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Text"/>
+            <xs:enumeration value="Outlined"/>
+            <xs:enumeration value="Raised"/>
+            <xs:enumeration value="Unelevated"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="ButtonType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="ButtonVariantType" name="Variant" default="Outlined"/>
+                <xs:attribute type="xs:string" name="Text" default="Learn More"/>
+                <xs:attribute type="IconType" name="Icon"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
 </xs:schema>

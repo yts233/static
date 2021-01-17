@@ -4,8 +4,13 @@
            targetNamespace="https://static.yts233.tk/Templates/Schemas/Page.xsd"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Page" type="PageType"/>
-  <xs:element type="StyleType" name="Style"/>
-  <xs:element type="ScriptType" name="Script"/>
+  <xs:complexType name="IncludeType">
+    <xs:sequence>
+      <xs:element type="StyleType" name="Style" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element type="ScriptType" name="Script" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="ScriptType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
@@ -24,8 +29,7 @@
   </xs:complexType>
   <xs:complexType name="PageType">
     <xs:sequence>
-      <xs:element type="StyleType" name="Style" minOccurs="0"/>
-      <xs:element type="ScriptType" name="Script" minOccurs="0"/>
+      <xs:element type="IncludeType" name="Include" minOccurs="0"/>
       <xs:any maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="Language"/>
