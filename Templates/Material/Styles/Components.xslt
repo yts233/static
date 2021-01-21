@@ -6,9 +6,9 @@
                xmlns:pg="https://static.yts233.tk/Templates/Schemas/Page.xsd">
     <xsl:template match="mat:Init">
         <h5:link rel="stylesheet" type="text/css"
-                 href="http://localhost:63342/Blog.Static/Templates/Material/Styles/Components.css"/>
-        <h5:script src="http://localhost:63342/Blog.Static/Templates/Material/Scripts/Material.js" type="text/javascript"/>
-        <h5:script src="http://localhost:63342/Blog.Static/Material/Scripts/Components.js" type="text/javascript"/>
+                 href="https://static.yts233.tk/Templates/Material/Styles/Components.css"/>
+        <h5:script src="https://static.yts233.tk//Templates/Material/Scripts/Material.js" type="text/javascript"/>
+        <h5:script src="https://static.yts233.tk/Templates/Material/Scripts/Components.js" type="text/javascript"/>
     </xsl:template>
     <xsl:template match="mat:Button">
         <xsl:variable name="class">
