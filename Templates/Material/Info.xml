@@ -3,15 +3,18 @@
     <Name>Material Template</Name>
     <Author>Ye_Tianshun</Author>
     <Schemas>
-        <Schema namespace="https://static.yts233.tk/Templates/Material/Schemas/Components.xsd" type="xml/xsd"/>
+        <Schema namespace="https://static.yts233.tk/Templates/Material/Schemas/Components.xsd" type="text/xml"/>
     </Schemas>
     <Styles>
-        <Style href="https://static.yts233.tk/Templates/Material/Styles/Components.xslt" type="xml/xslt"/>
-        <Style href="https://static.yts233.tk/Templates/Material/Styles/Material.css" type="xml/css"/>
+        <Style href="https://static.yts233.tk/Templates/Material/Styles/Components.xslt" type="application/xslt+xml"/>
+        <Style href="https://static.yts233.tk/Templates/Material/Styles/Material.css" type="text/css"/>
     </Styles>
     <Scripts>
-        <Script src="https://static.yts233.tk/Templates/Material/Scripts/Components.js" type="text/javascript"/>
-        <Script src="https://static.yts233.tk/Templates/Material/Scripts/Material.js" type="text/javascript"/>
+        <Script src="https://static.yts233.tk/Templates/Material/Scripts/Components.js" type="application/javascript"/>
+        <Script src="https://static.yts233.tk/Templates/Material/Scripts/Material.js" type="application/javascript"/>
     </Scripts>
+    <Fonts>
+        <Font src="https://static.yts233.tk/Templates/Material/Fonts/MaterialIcons-Regular.ttf" type="font/ttf"/>
+    </Fonts>
 
 </Template>

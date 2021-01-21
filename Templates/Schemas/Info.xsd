@@ -2,13 +2,14 @@
 <xs:schema attributeFormDefault="unqualified"
            elementFormDefault="qualified"
            targetNamespace="https://static.yts233.tk/Templates/Schemas/Info.xsd"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:mime="https://static.yts233.tk/Templates/Schemas/MIMEType.xsd">
     <xs:element name="Template" type="TemplateType"/>
     <xs:complexType name="SchemaType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute type="xs:string" name="namespace"/>
-                <xs:attribute type="xs:string" name="type"/>
+                <xs:attribute type="mime:MIMEType" name="type"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -21,7 +22,7 @@
         <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute type="xs:string" name="href" use="optional"/>
-                <xs:attribute type="xs:string" name="type" use="optional"/>
+                <xs:attribute type="mime:MIMEType" name="type" use="optional"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -34,7 +35,7 @@
         <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute type="xs:string" name="src" use="required"/>
-                <xs:attribute type="xs:string" name="type" use="required" default="text/javascript"/>
+                <xs:attribute type="mime:MIMEType" name="type" use="required" default="text/javascript"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>

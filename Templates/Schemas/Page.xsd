@@ -2,37 +2,38 @@
 <xs:schema attributeFormDefault="unqualified"
            elementFormDefault="qualified"
            targetNamespace="https://static.yts233.tk/Templates/Schemas/Page.xsd"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Page" type="PageType"/>
-  <xs:complexType name="IncludeType">
-    <xs:sequence>
-      <xs:element type="StyleType" name="Style" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element type="ScriptType" name="Script" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:any minOccurs="0" maxOccurs="unbounded"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ScriptType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="Src"/>
-        <xs:attribute type="xs:string" name="Type" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="StyleType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="Href"/>
-        <xs:attribute type="xs:string" name="Type" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="PageType">
-    <xs:sequence>
-      <xs:element type="IncludeType" name="Include" minOccurs="0"/>
-      <xs:any maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
-    <xs:attribute type="xs:string" name="Language"/>
-    <xs:attribute type="xs:string" name="Title"/>
-  </xs:complexType>
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:mime="https://static.yts233.tk/Templates/Schemas/MIMEType.xsd">
+    <xs:element name="Page" type="PageType"/>
+    <xs:complexType name="IncludeType">
+        <xs:sequence>
+            <xs:element type="StyleType" name="Style" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element type="ScriptType" name="Script" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ScriptType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Src"/>
+                <xs:attribute type="mime:MIMEType" name="Type" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="StyleType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Href"/>
+                <xs:attribute type="mime:MIMEType" name="Type" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="PageType">
+        <xs:sequence>
+            <xs:element type="IncludeType" name="Include" minOccurs="0"/>
+            <xs:any maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute type="xs:string" name="Language"/>
+        <xs:attribute type="xs:string" name="Title"/>
+    </xs:complexType>
 </xs:schema>
