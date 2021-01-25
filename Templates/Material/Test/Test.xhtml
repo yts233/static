@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet type="text/xsl" href="1.xslt"?>
-<Page Language="en-US"
+<Page Language="en"
       Title="Test Page"
       xmlns:mat="https://static.yts233.tk/Templates/Material/Schemas/Components.xsd"
       xmlns="https://static.yts233.tk/Templates/Schemas/Page.xsd">
     <Include>
+        <mat:Init/>
         <Style Href="1.css" Type="text/css"/>
         <Script Src="1.js" Type="application/javascript"/>
-        <mat:Init/>
     </Include>
-    <mat:Button Text="Learn More" Icon="home"/>
-    <mat:Button Text="Learn More" Icon="3d_rotation"/>
+    <mat:Appbar Location="Top" Variant="Regular">
+        <mat:Buttons>
+            <mat:IconButton Variant="Toggle" Pressed="True" Icon="love" IconOn="home"/>
+        </mat:Buttons>
+    </mat:Appbar>
 </Page>

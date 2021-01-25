@@ -12,7 +12,12 @@
                 <xsl:apply-templates select="pg:Include/*"/>
             </h5:head>
             <h5:body>
-                <xsl:apply-templates select="*[not(pg:Include|pg:Script)]"/>
+                <h5:noscript>
+                    <h5:center style="background:#000;color:#fff;">You seem to block javascript, and this page may not display
+                        properly.
+                    </h5:center>
+                </h5:noscript>
+                <xsl:apply-templates select="*[not(pg:Include|pg:Include//*)]"/>
             </h5:body>
         </h5:html>
     </xsl:template>
