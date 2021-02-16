@@ -10,7 +10,7 @@
 
 (async function () {
     'use strict';
-    var video = __INITIAL_STATE__.videoData ?? __INITIAL_STATE__.videoInfo;
+    var video = window.__INITIAL_STATE__.videoData ?? window.__INITIAL_STATE__.videoInfo;
     var aid = video.aid;
     var bvid = video.bvid;
     var cid = video.cid;
