@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Bilibili Downloader
-// @namespace    https://static.yts233.tk/Tampermonkey/BilibiliDownloader/script.user.js
+// @namespace    https://static.yts233.tk/Tampermonkey/BilibiliDownloader.user.js
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
