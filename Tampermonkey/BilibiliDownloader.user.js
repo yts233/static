@@ -3,7 +3,7 @@
 // @namespace    https://static.yts233.tk/Tampermonkey/BilibiliDownloader.user.js
 // @version      0.1
 // @description  try to take over the world!
-// @author       You
+// @author       Ye_Tianshun
 // @match        https://www.bilibili.com/*
 // @grant        none
 // ==/UserScript==
