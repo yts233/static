@@ -26,7 +26,7 @@
         },
         download: async function (quality) {
             var actor = document.createElement('a');
-            actor.href = await getPlayUrlApi(cid.bvid, quality);
+            actor.href = await getPlayUrlApi(cid.bvid, quality).durl[0].url;
             actor.download = `${video.title}.${aid}.flv`;
             actor.click();
         }
