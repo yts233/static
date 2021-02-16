@@ -14,7 +14,7 @@
     var aid = video.aid;
     var bvid = video.bvid;
     var cid = video.cid;
-    var getPlayUrlApi = async(cid, bvid, quality) => await(await fetch(`https://api.bilibili.com/x/player/playurl?cid=${cid}&bvid=${bvid}&qn=${quality}`)).json().data;
+    var getPlayUrlApi = async(cid, bvid, quality) => (await(await fetch(`https://api.bilibili.com/x/player/playurl?cid=${cid}&bvid=${bvid}&qn=${quality}`)).json()).data;
     var qualities = (await getPlayUrlApi(cid, bvid, 32)).accept_quality;
     window.downloader = {
         aid: aid,
